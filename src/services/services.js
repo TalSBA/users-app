@@ -1,3 +1,5 @@
+import axios from "axios";
+
 const users = [
     {
         "FullName": "Jon Doe",
@@ -18,9 +20,10 @@ const users = [
 ]
 
 export function getUsers() {
-    return users;
+   return axios.get('https://localhost:44390/weatherforecast/GetUsers').then(response =>  response.data
+    );
 }
 
-export function saveUser(user){
+export function saveUser(user) {
 
 }

@@ -8,6 +8,7 @@ function Home(props) {
 
     return (
         <div className="p-home">
+            <h1>Users</h1>
             <UsersTable />
             <UsersForm />
         </div>
